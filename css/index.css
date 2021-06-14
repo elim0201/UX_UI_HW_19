@@ -48,17 +48,21 @@ body {
     justify-content: center;
     align-items: center;
     width: 250px;
-    padding: 20px;
+    padding: 10px;
     background-color: rgba(236, 236, 236, 0.219);
 }
 .profile-pic {
     width: 250px;
 }
+h2 {
+    margin: 5px;
+
+}
 
 /**Button CSS**/
 
 button {
-    width: 150px;
+    width: 200px;
     height: 45px;
     background-color: rgb(44, 101, 124);
     border: none;
@@ -92,12 +96,12 @@ button:hover {
     align-self: center;
     justify-content: space-evenly;
     width: 274px;
-    background-color: rgb(39, 39, 39);
+    
     font-weight: bold;
 }
 
 .dribbble {
-    color: rgb(225, 248, 255);
+    color: rgb(23, 117, 146);
 }
 
 .linkedin {
