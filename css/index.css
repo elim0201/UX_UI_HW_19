@@ -55,6 +55,8 @@ body {
     width: 250px;
 }
 
+/**Button CSS**/
+
 button {
     width: 150px;
     height: 45px;
@@ -68,7 +70,7 @@ button {
 }
 
 button:hover {
-    background: rgb(255, 148, 106);
+        background: rgb(255, 148, 106);
     color: black;
 }
 
@@ -282,4 +284,9 @@ input {
     height: 100px;
 }
 input[value="Type Message Here"] {
-    text-align: inherit;
+    text-align: start;
+}
+
+html {
+    scroll-behavior: smooth;
+}

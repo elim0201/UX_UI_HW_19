@@ -1,0 +1,1 @@
+console.log("Your index.js files is loaded correctly!");
