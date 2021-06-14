@@ -6,7 +6,7 @@ $(document).ready(function(){
         // trigger when mouse hover
         function(){
             $(this).animate({
-                marginTop: "-=5%",
+                marginTop: "-=2%",
             },200);
         },
         //trugger when mouse out
