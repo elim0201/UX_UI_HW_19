@@ -7,9 +7,7 @@ nav {
     justify-content: space-between;
     padding: 10px;
     height: 36px;
-   
 }
-
 
 a {
     text-decoration: none;
@@ -17,17 +15,20 @@ a {
     padding: 8px;
     color: white;
     font-weight:  400;
-    
 }
 body {
     background: white;
     margin: 0;
     font-family: Poppins;
     font-weight: 300;
- 
 }
 
-
+/**About Section**/
+.body-box-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .body-box{
     display: flex;
     flex-direction: column;
@@ -36,7 +37,7 @@ body {
     width: 250px;
     padding: 20px;
     margin: auto;
-    background-color: rgb(241, 241, 241);
+    background-color: rgba(236, 236, 236, 0.219);
     margin-top: 25px;
     margin-bottom: 25px;
 
@@ -56,11 +57,16 @@ button {
     font-weight: 300;
     font-size: 16px;
 }
+
+/**Navigation Logo**/
+
 .logo {
     height: 40px;
     border-radius: 50px;
-
 }
+
+/**Social Network**/
+
 .socials {
     font-weight: 500;
 }
@@ -86,6 +92,8 @@ button {
     color: rgb(26, 173, 231);
 }
 
+/**Footer**/
+
 footer {
     background-color:rgb(44, 101, 124);
     height: 100px;
@@ -109,61 +117,41 @@ footer {
 
 /*My UX Skills Start*/
 h1 {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
+    display: flex;
+    align-items: center;
     font-family: Poppins;
+    font-weight: bold;
 }
 
 .flexContainer {
     display: flex;
-    width: 33%;
     margin: auto;
-    justify-content: space-evenly;
+    justify-content: center;
    
 }
 
-.flexDiv1{
+.flexDiv{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(240, 251, 255, 31%);
+    background-color: rgba(236, 236, 236, 0.219);
     border-radius: 4px;
-    margin-left: 25px;
     height: 320px;
+    width: 250px;
     justify-content: space-evenly;
-
-    
-}
-.flexDiv2{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(240, 251, 255, 31%);
-    border-radius: 4px;
-    margin-left: 25px;
-    height: 320px;
-    justify-content: space-evenly;
-
-    
-}
-.flexDiv3{
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    background-color: rgba(240, 251, 255, 31%);
-    border-radius: 4px;
-    margin-left: 25px;
-    height: 320px;
-    justify-content: space-evenly;
-
+    margin: auto;
 }
 
 /*My UX Skills End*/
 
 /*My Work Starts Here */
-/* CSS Styles for Grid Template */
 
+/* CSS Styles for Grid Template */
+.myWork-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
 .workGrid { 
     display: grid;
     margin: auto;
@@ -244,4 +232,47 @@ h1 {
         "flexDiv3"
         ;
     }
+}
+
+/**Contact Us**/
+
+.contact {
+    margin-left: 15%;
+    width: 800px;
+    background-color: rgba(236, 236, 236, 0.219);
+    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+
+}
+.contact-title {
+    text-align: center;
+}
+.contact-p {
+    padding: 25px;
+}
+.contact-right {
+    text-align: left;
+    padding-left: 25px;
+    padding-bottom: 25px;
+}
+.contact-center {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+label {
+    width: 450px;
+}
+input {
+    width: 450px;
+    font-family: 'Poppins', sans-serif;
+}
+#msg {
+    height: 150px;
+}
+input[value="Type Message Here"] {
+    text-align: justify;
 }

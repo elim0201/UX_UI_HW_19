@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <link href="css/index.css" rel="stylesheet">
-        <title>Esther Lim's Portfolio</title>
-    </head>
-    <nav>
-        <img class="logo" src="logo.jpg">
 
-        <div class="primary-nav">
-            <a href=#>About</a>
-            <a href=#>Skills</a>
-            <a href=#>Work</a>
-            <a href=#>Contact</a>
-        </div>
-        
-        
-    </nav>
+<head>
+    <meta charset="utf-8">
+    <link href="css/index.css" rel="stylesheet">
+    <title>Esther Lim's Portfolio</title>
+</head>
 
-    <body>
-        <div class="body-box">
-        <img class="profile-pic" src="ProfilePic.jpg">
-        <p class="brand-statement">I'm someone who's diligent in my work. I believes there's more to design than just creativity, understanding your audience matters.
+<!--Navigation Bar-->
+
+<nav>
+    <img class="logo" src="images/logo.jpg">
+
+    <div class="primary-nav">
+        <a href=#>About</a>
+        <a href=#>Skills</a>
+        <a href=#>Work</a>
+        <a href=#>Contact</a>
+    </div>
+</nav>
+
+<!--Summary Box-->
+
+<body>
+    <div class="body-box-center">
+    <div class="body-box">
+        <h2>Hi, I'm Esther</h2>
+        <img class="profile-pic" src="images/ProfilePic.jpg">
+        <p class="brand-statement">I'm someone who's diligent in my work. I believes there's more to design than just
+            creativity, understanding your audience matters.
             <br>
             <br>
-    
+
             My goal with design is to focus on the user's experience in all things. If the user is happy, so am I.
         </p>
         <br>
@@ -36,25 +43,26 @@
             <div class="linkedin">LinkedIn</div>
             <div class="twitter">Twitter</div>
         </div>
-        </div>
-    </body>
-
-
-
+    </div>
+    </div>
+</body>
 
 <!--MY UX Skills section coded using CSS flex-->
 
 <section class="mySkills">
     <h1 class="UXSkillHeader">My UX Skills</h1>
     <div class="flexContainer">
-        <div class="flexDiv1">
+        <div class="flexDiv1 flexDiv">
             <h3>UX Research</h3>
-            <div class="skillPara"><p>Understanding your user and stakeholder could greatly benefit your design. I gather information through research - qualitative and quantitative.</p></div>
+            <div class="skillPara">
+                <p>Understanding your user and stakeholder could greatly benefit your design. I gather information
+                    through research - qualitative and quantitative.</p>
+            </div>
             <br>
-            <img src="UXResearchBar.png">
+            <img src="images/UXResearchBar.png">
         </div>
 
-        <div class="flexDiv2">
+        <div class="flexDiv2 flexDiv">
             <h3>UX Design</h3>
             <div class="skillPara">
                 <ul>
@@ -65,10 +73,10 @@
                 </ul>
                 <p> Repeating these steps until the design has tuned for users.</p>
             </div>
-            <img src="UXDesignBar.png">
+            <img src="images/UXDesignBar.png">
         </div>
 
-        <div class="flexDiv3">
+        <div class="flexDiv3 flexDiv">
             <h3>Front-End Design</h3>
             <div class="skillPara">
                 <ul>
@@ -79,20 +87,20 @@
                 </ul>
             </div>
             <br><br>
-            <img src="FrontEndBar.png">
+            <img src="images/FrontEndBar.png">
         </div>
-        
+
     </div>
 </section>
 
 <!--MY UX Skills section coded using CSS flex-->
-
+<div class="myWork-center">
 <section class="myWork">
     <h1>My Work</h1>
     <div class="workGrid">
         <div class="projectOne">
             <h4>French Bulldog Rescue Network</h4>
-            <img src="projectOne.png">
+            <img src="images/projectOne.png">
             <p>A Non-profit Website Redesign (Team Project)</p>
             <div class="studyButton">
                 <button>See Case Study</button>
@@ -101,7 +109,7 @@
 
         <div class="projectTwo">
             <h4>F.R.E.D.</h4>
-            <img src="projectTwo.png">
+            <img src="images/projectTwo.png">
             <p>An At-home Service Car Wash App (Team Project)</p>
             <div class="studyButton">
                 <button>See Case Study</button>
@@ -110,7 +118,7 @@
 
         <div class="projectThree">
             <h4>DHS.gov</h4>
-            <img src="projectThree.png">
+            <img src="images/projectThree.png">
             <p>A Government Website Redesign (Individual Project)</p>
             <div class="studyButton">
                 <button>See Case Study</button>
@@ -119,21 +127,46 @@
 
         <div class="projectFour">
             <h4>PlanIt</h4>
-            <img src="projectFour.png">
+            <img src="images/projectFour.png">
             <p>Post-Pandemic Travel Mobile App (Individual Project)</p>
             <div class="studyButton">
                 <button>See Case Study</button>
             </div>
         </div>
     </div>
-
     <div class="viewProject">
         <button>View all projects</button>
     </div>
 </section>
+</div>
 
+<!--Contact-->
+
+<div class="contact-center">
+<div class="contact">
+    <h4 class="contact-title">Contact Me</h4>
+    <div class="contact-left">
+        <p class="contact-p">If you like what you see, please reach out to me by filling this form. If you prefer email, you could contact me at: estherlim0201@gmail.com</p>
+    </div>
+    <div class="contact-right">
+        <form class="contact-form" action="/action_page.php">
+            <label for="fname">First name:</label><br>
+            <input type="text" id="fname" name="fname" value="John"><br>
+            <label for="lname">Last name:</label><br>
+            <input type="text" id="lname" name="lname" value="Doe"><br>
+            <label for="message">Message:</label><br>
+            <input type="text" id="msg" name="msg" value="Type Message Here"><br><br>
+
+            <button>Submit</button>
+        </form>
+    </div>      
+</div>
+</div>
+
+<!--Footer-->
 <footer>
-    <p class="quote">"Esther is a gem. She's very knowledgeable with Figma and can execute fast. She's great to work with, in combining style to collaborate with other designers."</p>
+    <p class="quote">"Esther is a gem. She's very knowledgeable with Figma and can execute fast. She's great to work
+        with, in combining style to collaborate with other designers."</p>
     <p>- Project Teammate</p>
 </footer>
 
