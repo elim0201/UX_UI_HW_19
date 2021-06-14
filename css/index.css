@@ -7,15 +7,27 @@ nav {
     justify-content: space-between;
     padding: 10px;
     height: 36px;
+/**Nav Bar Fixed**/    
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
-a {
+.primary-nav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
     font-family: Poppins;
-    padding: 8px;
-    color: white;
     font-weight:  400;
 }
+.primary-nav a:hover {
+    background: rgb(255, 148, 106);
+    color: black;
+}
+
 body {
     background: white;
     margin: 0;
@@ -28,6 +40,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 100px;
 }
 .body-box{
     display: flex;
@@ -52,6 +65,11 @@ button {
     font-family: Poppins;
     font-weight: 300;
     font-size: 16px;
+}
+
+button:hover {
+    background: rgb(255, 148, 106);
+    color: black;
 }
 
 /**Navigation Logo**/
@@ -118,6 +136,8 @@ h1 {
     justify-content: space-around;
     font-family: Poppins;
     font-weight: bold;
+    margin-top: 100px;
+
 }
 
 .flexContainer {
@@ -228,9 +248,8 @@ section {
 /**Contact Us**/
 
 .contact {
-    width: 800px;
+    width: 500px;
     background-color: rgba(236, 236, 236, 0.219);
-    padding: 10px;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -238,7 +257,7 @@ section {
     text-align: center;
 }
 .contact-p {
-    padding: 25px;
+    padding-left: 25px;
 }
 .contact-right {
     text-align: left;
@@ -249,6 +268,7 @@ section {
     display: flex;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 100px;
 }
 
 label {
@@ -259,8 +279,7 @@ input {
     font-family: 'Poppins', sans-serif;
 }
 #msg {
-    height: 150px;
+    height: 100px;
 }
 input[value="Type Message Here"] {
-    text-align: justify;
-}
+    text-align: inherit;
