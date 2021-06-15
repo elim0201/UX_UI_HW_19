@@ -24,8 +24,9 @@ nav {
     font-weight:  400;
 }
 .primary-nav a:hover {
-    background: rgb(255, 148, 106);
-    color: black;
+    background: rgb(6, 73, 100);
+    color: white;
+    margin: 0;
 }
 
 body {
@@ -36,6 +37,12 @@ body {
 }
 
 /**About Section**/
+
+#aboutMe {
+    height: 1080px;
+    display: flex;
+    justify-content: center;
+}
 .body-box-center {
     display: flex;
     justify-content: center;
@@ -44,38 +51,74 @@ body {
 }
 .body-box{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    width: 250px;
-    padding: 10px;
-    background-color: rgba(236, 236, 236, 0.219);
+    width: auto;
+    padding: 5px;
+    height: 500px
+}
+.body-left {
+    padding: 20px;
+    text-align: center;
+}
+.body-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 450px;
+    padding: 20px;
+    color: rgb(20, 20, 20);
 }
 .profile-pic {
     width: 250px;
+    border-radius: 8px;
 }
 h2 {
-    margin: 5px;
-
+    margin: 0;
+    color:rgb(20, 20, 20);
 }
+
+.brand-statement {
+    width: 500px;
+}
+
+/**Social Network**/
+
+.socials {
+    font-weight: 500;
+}
+.socials-link {
+    padding: 4px;
+    display: flex;
+    align-self: center;
+    justify-content: space-evenly;
+    width: 200px;
+    font-weight: regular;
+}
+.social-icon img{
+    width: 25px;
+}
+
 
 /**Button CSS**/
 
 button {
     width: 200px;
     height: 45px;
-    background-color: rgb(44, 101, 124);
+    background-color: rgb(0, 115, 160);
     border: none;
     color: white;
     border-radius: 4px;
     font-family: Poppins;
-    font-weight: 300;
+    font-weight: semi-bold;
     font-size: 16px;
 }
 
 button:hover {
-        background: rgb(255, 148, 106);
-    color: black;
+        background: rgb(2, 102, 141);
+    color: white;
 }
 
 /**Navigation Logo**/
@@ -85,38 +128,13 @@ button:hover {
     border-radius: 50px;
 }
 
-/**Social Network**/
 
-.socials {
-    font-weight: 500;
-}
-.socials-link {
-    padding: 8px;
-    display: flex;
-    align-self: center;
-    justify-content: space-evenly;
-    width: 274px;
-    
-    font-weight: bold;
-}
-
-.dribbble {
-    color: rgb(23, 117, 146);
-}
-
-.linkedin {
-    color: rgb(77, 210, 255);
-}
-
-.twitter {
-    color: rgb(26, 173, 231);
-}
 
 /**Footer**/
 
 footer {
     background-color:rgb(44, 101, 124);
-    height: 100px;
+    height: 200px;
     padding: 10px;
 
 
@@ -133,6 +151,18 @@ footer {
     padding-right: 100px;
 }
 
+.footer-socials {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 250px;
+}
+.footer-socials-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    justify-content: space-evenly;
+}
 /*UX_UI_HW_18*/
 
 /*My UX Skills Start*/
@@ -143,23 +173,35 @@ h1 {
     font-family: Poppins;
     font-weight: bold;
     font-size: 40px;
-    margin-top: 100px;
-    margin-top: 100px;
+    color:rgb(20, 20, 20)
 
 }
 
 .flexContainer {
     display: flex;
     margin: auto;
-    justify-content: center;
-   
+    justify-content: center; 
+    
 }
 
+#mySkills {
+    height: 600px;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.skills-title {
+    
+}
 .flexDiv{
     padding: 20px;
     display: flex;
     flex-direction: column;
-    background-color: rgba(236, 236, 236, 0.219);
+    justify-content: space-between;
+    color: rgb(20, 20, 20,);
+    background-color: rgb(255, 255, 255);
     border-radius: 4px;
     height: 320px;
     width: 250px;
@@ -171,10 +213,16 @@ h1 {
 /*My Work Starts Here */
 
 /* CSS Styles for Grid Template */
+#myWork {
+    height: 1500px;
+}
+
+
 .myWork-center {
     display: flex;
     align-items: center;
     justify-content: space-around;
+
 }
 .workGrid { 
     display: grid;
@@ -226,19 +274,22 @@ section {
 
 @media screen and (max-width: 600px) {
     .workGrid {
-    grid-template-rows:  600px 600px 620px 650px;
-    grid-template-columns: 1fr;
-    grid-template-areas:
-    "projectOne"
-    "projectTwo"
-    "projectThree"
-    "projectFour"
+        margin-bottom: 300px;
+        margin-top: 300px;
+        grid-template-rows:  600px 600px 600px 600px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "projectOne"
+        "projectTwo"
+        "projectThree"
+        "projectFour"
     ;}
 
     .flexContainer {
         display: grid;
+        margin-top: 300px;
         margin-bottom: 300px;
-        grid-template-rows: 400px 400px 400px;
+        grid-template-rows: 300px 300px 300px;
         grid-template-columns: 1fr;
         grid-template-areas: 
         "flexDiv1"
@@ -246,15 +297,32 @@ section {
         "flexDiv3"
         ;
     }
+
+    #contactMe{
+        display: grid;
+        margin-top: 500px;
+        margin-bottom: 300px;
+        grid-template-rows: 600px ;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "contact-title"
+        "contact-center"
+        ;
+    }
 }
 
 /**Contact Us**/
-
+#contactMe {
+    background-color:white;
+    height: 800px;
+}
 .contact {
     width: 500px;
-    background-color: rgba(236, 236, 236, 0.219);
+    background-color: rgb(32, 32, 32);
+    border-radius: 4px;
     padding-left: 10px;
     padding-right: 10px;
+    color: white;
 }
 .contact-title {
     text-align: center;
@@ -280,6 +348,7 @@ label {
 input {
     width: 450px;
     font-family: 'Poppins', sans-serif;
+    color: darkgray;
 }
 #msg {
     height: 100px;
