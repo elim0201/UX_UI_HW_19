@@ -36,3 +36,12 @@ $(document).ready(function(){
     );
 });
 
+
+
+// scroll reveal //
+ScrollReveal(options);
+
+
+ScrollReveal().reveal('#mySkills', { delay: 2000});
+ScrollReveal().reveal('#myWork', { delay: 5000});
+ScrollReveal().reveal('#contactMe', { delay: 10000});
