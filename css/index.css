@@ -39,7 +39,7 @@ body {
 /**About Section**/
 
 #aboutMe {
-    height: 1080px;
+    height: 800px;
     display: flex;
     justify-content: center;
 }
