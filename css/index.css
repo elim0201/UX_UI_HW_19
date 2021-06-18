@@ -262,9 +262,6 @@ section {
     padding: 25px;
 }
 
-
-
-
 .studyButton {
     display: flex;
     padding: 25px;
@@ -272,44 +269,6 @@ section {
 
 }
 
-@media screen and (max-width: 600px) {
-    .workGrid {
-        margin-bottom: 300px;
-        margin-top: 300px;
-        grid-template-rows:  600px 600px 600px 600px;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-        "projectOne"
-        "projectTwo"
-        "projectThree"
-        "projectFour"
-    ;}
-
-    .flexContainer {
-        display: grid;
-        margin-top: 300px;
-        margin-bottom: 300px;
-        grid-template-rows: 300px 300px 300px;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "flexDiv1"
-        "flexDiv2"
-        "flexDiv3"
-        ;
-    }
-
-    #contactMe{
-        display: grid;
-        margin-top: 500px;
-        margin-bottom: 300px;
-        grid-template-rows: 600px ;
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        "contact-title"
-        "contact-center"
-        ;
-    }
-}
 
 /**Contact Us**/
 #contactMe {
@@ -359,4 +318,45 @@ input[value="Type Message Here"] {
 
 html {
     scroll-behavior: smooth;
+}
+
+/**Media Query**/
+
+@media all and (max-width: 600px) {
+    .workGrid {
+        margin-bottom: 300px;
+        margin-top: 300px;
+        grid-template-rows:  600px 600px 600px 600px;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "projectOne"
+        "projectTwo"
+        "projectThree"
+        "projectFour"
+    ;}
+
+    .flexContainer {
+        display: grid;
+        margin-top: 300px;
+        margin-bottom: 300px;
+        grid-template-rows: 300px 300px 300px;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "flexDiv1"
+        "flexDiv2"
+        "flexDiv3"
+        ;
+    }
+
+    #contactMe{
+        display: grid;
+        margin-top: 500px;
+        margin-bottom: 300px;
+        grid-template-rows: 600px ;
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "contact-title"
+        "contact-center"
+        ;
+    }
 }
